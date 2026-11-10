@@ -20,3 +20,8 @@ class Ball:
 
     def draw(self):
         self.image.draw(self.x, self.y)
+
+
+class BigBall(Ball):
+    image = None
+    image_file = 'ball41x41.png'
