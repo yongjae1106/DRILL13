@@ -49,5 +49,5 @@ def pause():
     pass
 
 def resume():
-    pass
+    boy.idle_started_at = get_time()
 
