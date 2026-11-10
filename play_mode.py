@@ -5,6 +5,7 @@ import item_mode
 import title_mode
 from boy import Boy
 from grass import Grass
+from item_hint import ItemHint
 
 
 def handle_events():
@@ -30,6 +31,9 @@ def init():
 
     grass = Grass()
     game_world.add_oject(grass, 0)
+
+    item_hint = ItemHint()
+    game_world.add_oject(item_hint, 2)
 
 
 
