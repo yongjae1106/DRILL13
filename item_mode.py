@@ -38,6 +38,8 @@ def handle_events():
             play_mode.boy.item = ITEMS[event.key]
             game_framework.pop_mode()
             return
+        elif event.type == SDL_KEYUP:
+            play_mode.boy.handle_event(event)
 
 def pause():
     pass
